@@ -1,0 +1,99 @@
+/* App.css - ChatGPT-like dark theme */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+h1, h2 {
+  color: #ffffff;
+}
+
+input, select, button, textarea {
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+input, select {
+  background-color: #2d2d3a;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+input:focus, select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px #4f46e560;
+}
+
+button {
+  background-color: #4f46e5;
+  color: #fff;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6366f1;
+}
+
+button[disabled] {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+form {
+  background-color: #2a2a3d;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #2d2d3a;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #f87171;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.history {
+  margin-top: 30px;
+}
