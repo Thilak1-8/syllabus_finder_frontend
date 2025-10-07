@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Syllabus Finder Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Students often struggle to find structured, high-quality online resources that align with their university syllabus. Manual searching on platforms like YouTube is time-consuming and frequently leads to irrelevant or unstructured content. **Syllabus Finder** solves this by offering a personalized, AI-driven learning experience that suggests syllabus-specific educational videos in a structured, topic-wise sequence.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Syllabus Upload & Processing:** Upload your syllabus (PDF, DOCX, TXT) and the system automatically extracts relevant topics.
+- **YouTube Video Retrieval:** Leveraging the YouTube Data API, the app fetches educational videos tailored to each syllabus topic.
+- **Language-Based Filtering:** Select your preferred language for video explanations to ensure a personalized learning experience.
+- **Structured Sequencing:** Videos are organized in the same order as your syllabus for systematic learning.
+- **User Preferences & Smart Sorting:** Results can be sorted by views, duration, and relevance.
+- **Caching & Recommendations:** Backend stores data to improve performance and recommend content.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Why Syllabus Finder?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Traditional methods and platforms are limited:
+- **Manual Searching (Google, YouTube):** Unstructured, time-consuming.
+- **Online Courses (Coursera, Udemy, Khan Academy):** Fixed syllabus, not flexible for university curricula.
+- **AI-Based Tools (ChatGPT, EdX, Duolingo):** General knowledge, not syllabus-specific.
 
-### `npm run build`
+**Limitations Overcome:**
+- ✅ Automatic syllabus-based video retrieval
+- ✅ Language-based video filtering
+- ✅ Structured, topic-wise sequencing of learning content
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend
+- **React.js:** Interactive user interface
+- **Axios:** Handling API requests
 
-### `npm run eject`
+### Backend
+- **Node.js + Express.js:** Server and API endpoints
+- **MongoDB:** Database for caching and personalized recommendations
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### APIs & AI Integration
+- **YouTube Data API:** Fetches relevant educational videos
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How It Works
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Upload Syllabus:** PDF, DOCX, or TXT format accepted.
+2. **Topic Extraction:** AI processes syllabus to extract topics.
+3. **Video Search:** Retrieves relevant YouTube videos for each topic.
+4. **Language Filtering:** Filters video results by user’s preferred explanation language.
+5. **Structured Results:** Organizes videos in syllabus sequence.
+6. **Smart Sorting:** Users can sort by views, duration, or relevance.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
 
-### Code Splitting
+- [Node.js](https://nodejs.org/) (v14+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- YouTube Data API Key (for backend integration)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Installation
 
-### Analyzing the Bundle Size
+```bash
+git clone https://github.com/Thilak1-8/syllabus_finder_frontend.git
+cd syllabus_finder_frontend
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Running the App
 
-### Making a Progressive Web App
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The frontend will run on [http://localhost:3000](http://localhost:3000)
 
-### Advanced Configuration
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+See the [syllabus_finder_backend](https://github.com/Thilak1-8/syllabus_finder_backend) for backend setup.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
+Contributions are welcome! Please open issues or pull requests for bug fixes, feature requests, or improvements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Maintainer
+
+Developed and maintained by [Thilak1-8](https://github.com/Thilak1-8).
